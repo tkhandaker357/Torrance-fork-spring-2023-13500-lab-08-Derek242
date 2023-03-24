@@ -1,12 +1,12 @@
 * Spring 2023 - Lab 08
 
-* Last name:
+* Last name: Ni
 
-* First name:
+* First name: Derek
 
-* GitHub username:
-
-* Notes:
+* GitHub username: Derek242
+ 
+* Notes: Doing Lab 8
 
 
   
