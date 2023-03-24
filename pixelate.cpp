@@ -13,11 +13,12 @@ void pixelate(std::string filename){
     int pixel[MAX_H][MAX_W];
     for (int i = 0; i < h; i++){
         for (int j = 0; j < w; j++){
-            if ((j >= w/4) && (i >= h/4) && (j <= (3*w)/4) && (i <= (3*h)/4)){
-                    pixel[i][j] = 255;
-            } else {
-                pixel[i][j] = img[i][j];
-            }
+            int x = (img[i][j] + img[i+1][j] + img[i][j+1] + img[i+1][j+1])/4;
+            pixel[i][j] = x;
+            pixel[i+1][j] = x;
+            pixel[i][j+1] = x;
+            pixel[i+1][j+1] = x;
+        
         }
     }
     writeImage("imageF.pgm", pixel, h, w);
