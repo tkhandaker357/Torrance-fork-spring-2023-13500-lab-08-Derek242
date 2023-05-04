@@ -10,15 +10,15 @@ void invert_half(std::string filename){
     int h, w;
     readImage(input, img, h, w);
 
-    int half[MAX_H][MAX_W];
+    int output_half_invert[MAX_H][MAX_W];
     for (int i = 0; i < h; i++){
         for (int j = 0; j < w; j++){
             if (j >= w/2){
-                half[i][j] = 255 - img[i][j];
+                output_half_invert[i][j] = 255 - img[i][j];
             } else{
-                half[i][j] = img[i][j];
+                output_half_invert[i][j] = img[i][j];
             }
         }
     }
-    writeImage("imageB.pgm",half, h, w);
+    writeImage("imageB.pgm",output_half_invert, h, w);
 }

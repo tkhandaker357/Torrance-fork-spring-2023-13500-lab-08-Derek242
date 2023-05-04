@@ -10,11 +10,11 @@ void invert(std::string filename){
     int h, w;
     readImage(input, img, h, w);
 
-    int swapped[MAX_H][MAX_W];
+    int output_inverted[MAX_H][MAX_W];
     for (int i = 0; i < h; i++){
         for (int j = 0; j < w; j++){
-            swapped[i][j] = 255 - img[i][j];
+            output_inverted[i][j] = 255 - img[i][j];
         }
     }
-    writeImage("imageA.pgm",swapped, h, w);
+    writeImage("imageA.pgm", output_inverted, h, w);
 }

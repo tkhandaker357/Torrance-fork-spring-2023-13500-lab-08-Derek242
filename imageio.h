@@ -9,8 +9,8 @@ void readImage(std::string filename, int image[MAX_H][MAX_W], int &height, int &
 void writeImage(std::string filename, int image[MAX_H][MAX_W], int height, int width); 
 void invert(std::string filename);
 void invert_half(std::string filename);
-void boxx(std::string filename);
+void white_box(std::string filename);
 void frame(std::string filename);
-void scale(std::string filename);
+void scale2x(std::string filename);
 void pixelate(std::string filename);
 

@@ -14,9 +14,9 @@ Additionally, I added and pushed a 3rd image
 int main(){
   invert("image1.pgm");
   invert_half("image2.pgm");
-  boxx("image1.pgm");
+  white_box("image1.pgm");
   frame("image2.pgm");
-  scale("image3.pgm");
+  scale2x("image3.pgm");
   pixelate("image3.pgm");
   return 0;
 }
